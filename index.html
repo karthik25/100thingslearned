@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>100 things learned :: funny imdb threads!</title>
+
+    <link href="100thingslearned-all.css" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="100thingslearned-core.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">100 things learned..!</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Start</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#submit">Credits</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To 100 things learned!</div>
+                <div class="intro-heading">A collection of funny imdb threads...!</div>
+                <br style="clear: both" />
+                <br style="clear: both" />
+                <a href="#services" class="page-scroll btn btn-xl">Start &raquo;</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Let the fun start!</h2>
+                    <h3 class="section-subheading text-muted">Feel free to <a class="page-scroll" href="#submit">add</a> one if you don't see it here!</h3>
+                </div>
+            </div>
+
+            <div ng-app="mainModule" ng-controller="mainController">
+                <div ng-repeat="part in dividedData">
+                    <div class="row text-center">
+                        <div class="col-md-4 wow bounceIn" data-wow-delay="0.4s" ng-repeat="entry in part">
+                            <div>
+                                <a href="{{ entry.MessageBoardLink }}" target="_blank"><img ng-src="{{entry.ImageRelativeUrl}}" alt="{{entry.Title}}" /></a></div>
+                            <h4 class="service-heading"><a href="{{entry.MessageBoardLink}}" target="_blank">{{entry.Title}}</a></h4>
+                            <p class="text-muted">
+                                {{entry.Description}}
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Why?</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">If I have nothing to do, one of my favorite time pass is to read imdb threads. And, whenever I find a 100 things learned (sometimes more, sometimes less) that gets me excited, because it's absolute fun :) So if you also enjoy these threads, go ahead and read them all, have fun!!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style type="text/css">
+        #loadingImg
+        {
+            display: none;
+        }
+
+        #timedAlert
+        {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+
+    <section id="submit">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section-heading">Credits...</h2>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h2 class="section-heading">Contribute!</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            When I put up the credits list, I was impressed that I have used so many frameworks/ plugins! So, here you go!!
+                            <br/><br/>
+                            <div class="element" style="height: 20px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                          There are number of ways to contribute, just give a pull request w/ the movie information. You could do this from the 
+                          shell or from the github webpage. For full instructions check out the <a href="#">Contribute.md</a> file!
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; 100 things learned... 2015</span>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="100thingslearned-all.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".element").typed({
+                strings: ["<a href=\"https://angularjs.org\">Angular.js</a>", "Bootstrap", "Font Awesome", "Animate.css", "jQuery", "jQuery Easing", "Classie", "Animate Header", "jq Bootstrap Validation", "Agency theme", "Typed.js", "Google Fonts"],
+                typeSpeed: 0,
+                loop: true,
+                showCursor: false
+            });
+        });
+    </script>
+</body>
+</html>
