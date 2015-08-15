@@ -84,7 +84,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Let the fun start!</h2>
-                    <h3 class="section-subheading text-muted">Feel free to <a class="page-scroll" href="#submit">add</a> one if you don't see it here!</h3>
+                    <h3 class="section-subheading text-muted">Feel free to <a class="page-scroll" href="#submit">add</a> one if you don't see it here</h3>
                 </div>
             </div>
 
@@ -92,15 +92,10 @@
                 <div ng-repeat="part in dividedData">
                     <div class="row text-center">
                         <div class="col-md-4 wow bounceIn" data-wow-delay="0.4s" ng-repeat="entry in part">
-                            <div>
-                                <a href="{{ entry.MessageBoardLink }}" target="_blank"><img ng-src="{{entry.ImageRelativeUrl}}" alt="{{entry.Title}}" /></a></div>
-                            <h4 class="service-heading"><a href="{{entry.MessageBoardLink}}" target="_blank">{{entry.Title}}</a></h4>
-                            <p class="text-muted">
-                                {{entry.Description}}
-                            </p>
+                            <movie entry="entry"></movie>
                         </div>
+                    <br/>
                     </div>
-                    <br />
                 </div>
             </div>
         </div>
