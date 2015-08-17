@@ -297,7 +297,7 @@ mainModule.controller("mainController", function ($scope, $http, $timeout, $log)
 mainModule.directive("movie", function (){
     return {
       restrict: 'E',
-      template: "<div><a href=\"{{ entry.MessageBoardLink }}\" target=\"_blank\"><img ng-src=\"{{entry.ImageRelativeUrl}}\" alt=\"{{entry.Title}}\" /></a><h4 class=\"service-heading\"><a href=\"{{entry.MessageBoardLink}}\" target=\"_blank\">{{entry.Title}}</a></h4><p class=\"text-muted\">{{entry.Description}}</p></div>",
+      templateUrl: "movie.html",
       replace: true,
       scope: {
           entry: "="
