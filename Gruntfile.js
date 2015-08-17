@@ -31,10 +31,10 @@ module.exports = function(grunt) {
                     'js/jquery-2.1.3.min.js',
                     'js/bootstrap.min.js',
                     'js/jquery.easing.min.js',
-                    'js/classie.js',
-                    'js/cbpAnimateHeader.js',
-                    'js/jqBoostrapValidation.js',
-                    'js/agency.js',
+                    'js/classie.min.js',
+                    'js/cbpAnimateHeader.min.js',
+                    'js/jqBoostrapValidation.min.js',
+                    'js/agency.min.js',
                     'js/typed.min.js'
                 ],
                 dest: '100thingslearned-all.js'
